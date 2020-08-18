@@ -1,5 +1,5 @@
 {
-    "name": "zanysoft/laravel-zip",
+    "name": "bureaupartners/laravel-zip",
     "description": "laravel-zip is the world's leading zip utility for file compression and backup.",
     "license": "MIT",
     "homepage": "http://www.zanysoft.co",
@@ -8,6 +8,11 @@
             "name": "Zany Soft",
             "email": "info@zanysoft.co",
             "homepage": "http://www.zanysoft.co"
+        },
+        {
+            "name": "Mark Hameetman",
+            "email": "mark@bureau.partners",
+            "homepage": "https://bureau.partners"
         }
     ],
     "keywords": [
@@ -25,17 +30,17 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ZanySoft\\Zip\\ZipServiceProvider"
+                "BureauPartners\\Zip\\ZipServiceProvider"
             ],
             "aliases": {
-                "Zip": "ZanySoft\\Zip\\ZipFacade"
+                "Zip": "BureauPartners\\Zip\\ZipFacade"
             }
         }
     },
     "autoload": {
         "psr-4": {
-           "ZanySoft\\Zip\\": "src"
-         }
+            "BureauPartners\\Zip\\": "src"
+        }
     },
     "require": {
         "php": ">=5.6.0"
